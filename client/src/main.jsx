@@ -1,11 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.jsx';
+import './index.css';
+
+import { ContextProvider } from "./contexts/ContextsProvider.jsx";
+import { SocketContextProvider } from './contexts/SocketContext.jsx';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <ContextProvider>
+    <SocketContextProvider>
+
+      <App />
+    </SocketContextProvider>
+  </ContextProvider>,
   document.getElementById('root')
-)
+);

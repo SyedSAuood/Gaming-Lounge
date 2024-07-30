@@ -1,0 +1,75 @@
+.relative {
+    position: relative;
+  }
+  
+  .w-full {
+    width: 100%;
+  }
+  
+  .absolute {
+    position: absolute;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .left-0 {
+    left: 0;
+  }
+  
+  .bg-gray-800 {
+    background-color: #1f1f1f; /* Adjust color as needed */
+  }
+  
+  .p-5 {
+    padding: 1.25rem; /* Adjust padding as needed */
+  }
+  
+  .slick-slider {
+    margin: 0 -1.25rem; /* Adjust margin as needed */
+  }
+  
+  /* Add more styles as needed */
+  
+.video-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .thumbnail {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .video-details {
+    padding: 12px;
+  }
+  
+  .video-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #fff;
+  }
+  
+  .channel-name {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  

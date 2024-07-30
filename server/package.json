@@ -18,7 +18,9 @@
     "express": "^4.17.3",
     "express-session": "^1.17.3",
     "mongoose": "^8.0.0",
+    "mongoose-sequence": "^6.0.0",
     "passport": "^0.6.0",
-    "passport-discord": "^0.1.4"
+    "passport-discord": "^0.1.4",
+    "socket.io": "^4.7.5"
   }
 }

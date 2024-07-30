@@ -6,4 +6,6 @@ const UserSchema = new mongoose.Schema({
     access_token:{type:String, require:true}
 })
 
-const User = module.exports = mongoose.model("User",UserSchema);
+const User = mongoose.model("User",UserSchema);
+
+module.exports = User

@@ -1,0 +1,10 @@
+.homebg {
+    background-image: url('../data/backiee-206531-landscape.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.5s; /* Add a transition for smooth resizing */
+    background-attachment: fixed;
+  }
+  

@@ -38,9 +38,17 @@ router.get('/redirect/callback',
           res.status(200).json(req.session.user);
         } else {
           // If the user is not authenticated or their data is not available, send an error or an empty object
-          res.status(401).json({ error: 'Unauthorized' });
+          res.status(400).json({ data: 'Unauthorized' });
         }
       });
-
+      // const url = 'http://localhost:3000/'
+      
+    router.get('/logout', (req, res) => {
+        // Clear the 'auth' cookie to log out the user
+        // res.clearCookie('discord.auth2');
+        // req.session.user = null;
+        res.status(401).json({ error: 'Unauthorized' });
+        // res.redirect(url);
+      })
 
 module.exports = router;

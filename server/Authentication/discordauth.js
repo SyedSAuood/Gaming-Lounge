@@ -1,16 +1,16 @@
 var DiscordStrategy = require('passport-discord').Strategy;
 const passport = require('passport');
-const Discorduser = require('../database/models/Discorduser');
+const Discorduser = require('../model/Discorduser')
 const axios = require('axios')
 
 passport.serializeUser((user,done)=>{
     //console.log(user)
-    console.log("serializeuser")
+   // console.log("serializeuser")
     done(null,user.id);
 })
 
 passport.deserializeUser(async(id,done)=>{
-    console.log("deserializeuser")
+    //console.log("deserializeuser")
    const user = await Discorduser.findById(id);
    if(user){
     done(null,user);
